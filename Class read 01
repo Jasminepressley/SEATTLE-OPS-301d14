@@ -1,13 +1,76 @@
 Reading
 Layers of OSI Model
 
-What does “OSI” stand for?
-List the 7 layers of the OSI model and what each one is responsible for.
-Distinguish which layers are the “hardware layers”, and which layers are the “software layers”. What does that even mean?
-How can the OSI model be used in troubleshooting?
-What Is Wireshark and How Is It Used?
+1. What does “OSI” stand for? OSI stands for Open Systems Interconnection.
 
-Feel free to stop at “How to Use Wireshark”
-What is Wireshark?
-What is a packet?
-What 3 high-level things does Wireshark accomplish? How could these be used for nefarious purposes? For benevolent purposes?
+2. List the 7 layers of the OSI model and what each one is responsible for.
+-Physical Layer
+-Data Link Layer
+-Network Layer
+-Transport Layer
+-Session Layer
+-Presentation Layer
+-Application Layer
+
+3. Distinguish which layers are the “hardware layers”, and which layers are the “software layers”. What does that even mean?
+
+The lower layers, which are often considered as the "hardware layers," focus more on the physical aspects of data transmission:
+
+-Physical Layer: This is the actual hardware layer that deals with the physical transmission of data over a communication channel. 
+It includes devices like cables, connectors, switches, hubs, and network interface cards (NICs).
+
+-Data Link Layer: Found between the physical layer and the network layer, this layer manages the flow of data over the physical layer. 
+It includes protocols that govern how devices access the physical network, such as Ethernet. 
+It deals with MAC addresses and error detection and correction at the bit level.
+
+The upper layers are often considered as the "software layers" and are more concerned with the logical aspects of data communication:
+
+-Network Layer: This layer focuses on routing and forwarding data packets between different networks. 
+It deals with logical addressing (IP addresses), routing protocols, and managing traffic congestion.
+
+-Transport Layer: Responsible for ensuring the reliable transmission of data between devices. 
+It manages end-to-end communication, provides error-checking, and handles issues like flow control and data segmentation.
+
+-Session Layer: This layer establishes, manages, and terminates connections (sessions) between applications. 
+It controls the dialogues (sessions) between computers by synchronizing communication and managing data exchange.
+
+-Presentation Layer: This layer deals with the syntax and semantics of the information exchanged between systems. 
+It translates data from the application layer into a format that the network can understand.
+
+-Application Layer: The topmost layer interacts directly with the end-user and provides network services to applications. 
+It includes protocols used for tasks like email, file transfer, and web browsing.
+
+4. How can the OSI model be used in troubleshooting?
+
+The OSI model helps troubleshoot by organizing network issues into seven layers, When something goes wrong:
+
+-Identify the Layer: Figure out which layer of the seven-layer model is likely causing the problem.
+
+-Focus on That Layer: Concentrate your efforts on that specific layer to fix the issue.
+
+-Step-by-Step Approach: Work through the layers one by one, starting from the top, to find and solve the problem.
+
+-Common Language: It gives everyone involved in fixing the issue a common way to talk about where the problem might be without getting too technical.
+
+-Confirm the Fix: After addressing the problem, make sure to validate the solution at that specific layer to ensure it's resolved.
+
+
+1.What Is Wireshark and How Is It Used?
+Wireshark is a network protocol analyzer, or an application that captures packets from a network connection, such as from your computer to your home office or the internet.
+
+
+2.What is a packet?
+Packet is the name given to a discrete unit of data in a typical Ethernet network.
+
+3. What 3 high-level things does Wireshark accomplish? How could these be used for nefarious purposes? For benevolent purposes?
+-Packet Capture: Wireshark listens to a network connection in real time and then grabs entire streams of traffic – quite possibly tens of thousands of packets at a time.
+
+-Filtering: Wireshark is capable of slicing and dicing all of this random live data using filters. By applying a filter, you can obtain just the information you need to see.
+
+-Visualization: Wireshark, like any good packet sniffer, allows you to dive right into the very middle of a network packet. It also allows you to visualize entire conversations and network streams.
+
+
+Resources:
+ChatGPT
+https://www.geeksforgeeks.org/open-systems-interconnection-model-osi/
+https://www.comptia.org/content/articles/what-is-wireshark-and-how-to-use-it
