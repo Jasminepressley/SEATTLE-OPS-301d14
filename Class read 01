@@ -1,0 +1,13 @@
+Reading
+Layers of OSI Model
+
+What does “OSI” stand for?
+List the 7 layers of the OSI model and what each one is responsible for.
+Distinguish which layers are the “hardware layers”, and which layers are the “software layers”. What does that even mean?
+How can the OSI model be used in troubleshooting?
+What Is Wireshark and How Is It Used?
+
+Feel free to stop at “How to Use Wireshark”
+What is Wireshark?
+What is a packet?
+What 3 high-level things does Wireshark accomplish? How could these be used for nefarious purposes? For benevolent purposes?
