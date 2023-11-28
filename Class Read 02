@@ -1,0 +1,28 @@
+1.What is a port? Describe it with an analogy that would help a family member understand.
+A port scanner is a computer program that checks network ports for one of three possible statuses – open, closed, or filtered.
+
+ -Imagine a port as a docking station or a harbor for ships. Just like a harbor provides a place for ships to stop, unload cargo, and pick up new items, 
+ a computer port is a place where you can connect different devices, like a USB drive or a printer, to your computer. 
+ It's like the port becomes a meeting point where information can be exchanged between your computer and these devices, much like a harbor where goods are exchanged between ships and the shore.
+
+2.What does a port scanner send to a port to check the current status?
+A port scanner sends a network request to connect to a specific TCP or UDP port on a computer and records the response.
+
+
+3.When a port scanner sends a request to connect, what are the three possible responses? Describe them.
+Open, Accepted: The computer responds and asks if there is anything it can do for you.
+Closed, Not Listening: The computer responds that “This port is currently in use and unavailable at this time.”
+Filtered, Dropped, Blocked: The computer doesn’t even bother to respond.
+
+
+4.What is the difference between TCP and UDP?
+TCP and UDP are the two most common protocols in use for Internet Protocol (IP) networks. 
+Transmission Control Protocol (TCP) is a nice orderly transaction protocol: TCP sends each packet in order, complete with error checking, verification, and a 3-way handshake to confirm each packet is successful.
+
+UDP doesn’t have any error checking but tends to be faster. Live streaming and online video games often use UDP for this reason. 
+UDP is a connectionless protocol, so programs that use UDP just send the data – and if you miss a packet, you will never get it again.
+
+Resources:
+ChatGPt
+https://www.varonis.com/blog/port-scanning-techniques
+
