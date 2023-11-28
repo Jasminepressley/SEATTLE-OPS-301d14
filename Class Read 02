@@ -22,7 +22,20 @@ Transmission Control Protocol (TCP) is a nice orderly transaction protocol: TCP 
 UDP doesn’t have any error checking but tends to be faster. Live streaming and online video games often use UDP for this reason. 
 UDP is a connectionless protocol, so programs that use UDP just send the data – and if you miss a packet, you will never get it again.
 
+
+5.List and describe the ports used for the following:
+Telnet-The telecommunication network protocol, communicates over TCP port 23
+SSH-Secure Shell. This communicates over TCP port 22
+DNS-Domain Name System, are communicating over the UDP protocol using port 53. 
+SMTP-Simple Mail Transfer Protocol, uses TCP port 25
+HTTP-HTTP primarily uses port 80. This port is the default for unencrypted web traffic. However, when HTTPS, the secure version of HTTP, is used, it operates over port 443.
+HTTPS-Hypertext Transfer Protocol Secure, communicating over TCP port 443 
+RDP-Remote Desktop Protocol,  to provide that shared desktop view, and it commonly communicates using TCP port 3389.
+Ping- Ping uses the Internet Control Message Protocol (ICMP) which operates at the network layer of the OSI model. 
+ICMP doesn't rely on ports like TCP or UDP do. However, ICMP messages are often used in conjunction with the Internet Protocol (IP) and don't have dedicated port numbers like other protocols.
+
 Resources:
 ChatGPt
 https://www.varonis.com/blog/port-scanning-techniques
+https://www.professormesser.com/network-plus/n10-008/n10-008-video/common-ports-n10-008/
 
