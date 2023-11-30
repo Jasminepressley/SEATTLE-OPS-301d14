@@ -2,6 +2,26 @@ Reading
 VirtualBox Network Settings Guide
 
 Which network mode in VirtualBox can be used to emulate unplugging the Ethernet cable from the network?
+Not Attached 
+
 Which network mode would be best if you wanted to run a server on a VM that could be fully accessible from your physical local area network?
+Bridged network mode in VirtualBox, you can access a host machine, hosts of the physical network and external networks, including internet from a VM
+
 What are the three options of promiscuous mode and what does each do?
+
+There are three options of using the promiscuous mode.
+
+-Deny. Any traffic that is not intended to the virtual network adapter of the VM is hidden from the VM. This option is set by default.
+-Allow VMs. All traffic is hidden from the VM network adapter except the traffic transmitted to and from other VMs.
+-Allow All. There are no restrictions in this mode. A VM network adapter can see all incoming and outgoing traffic.
+The Promiscuous mode can be used not only for the Bridged network mode, but also for NAT Network, Internal Network and Host-Only Adapter modes.
+
+
 What is Port Forwarding?
+Port forwarding is a networking technique that allows devices on a local network to be accessed by devices outside the network. 
+It involves redirecting a communication request from one port number on a router or firewall to another port number on a specific device within the local network.
+
+
+Resouces:
+https://www.nakivo.com/blog/virtualbox-network-setting-guide/
+ChatGPT
