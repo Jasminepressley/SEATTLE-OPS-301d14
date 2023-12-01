@@ -1,7 +1,29 @@
 Reading
-What is a Site-to-Site VPN?
 
 What is a site-to-site VPN?
+A site-to-site virtual private network (VPN) refers to a connection set up between multiple networks.
+
 What is TCP/IP and what is it used for?
+Transmission Control Protocol/Internet Protocol (TCP/IP). 
+TCP/IP outlines how data is organized according to packets, given addresses, transmitted, and received across different computers on the internet.
+
 What are some popular reasons for using a VPN?
+The modern iteration of a VPN gained popularity because of people wanting to mask their IP addresses and surf the internet more safely. 
+A hidden IP address gives you the freedom to download torrents without revealing who you are. You can also gain access to geo-blocked content, regardless of your location. 
+In addition, on a public network, you have to deal with a constant barrage of cyberattacks, but with a VPN, you can enjoy a more secure, encrypted connection.
+These attributes made private VPNs a top choice among individual users.
+
 Explain the difference between the three types of VPNs.
+
+Remote Access VPNs
+A remote access VPN refers to a temporary connection set up between two or more users and a central location. In most cases, a remote access VPN is used to give each location access to a data center. 
+In some situations, a connection that makes use of Internet Protocol security (IPsec) is sufficient. However, it is also common for an organization to utilize a VPN, which avails them of the security positioned at the gateways at each end of the VPN.
+
+Intranet-based Site-to-Site
+An intranet-based site-to-site VPN connects more than one local-area network (LAN) to form a wide-area network (WAN). A company may also use this kind of setup to incorporate software-defined WAN (SD-WAN). 
+Intranet-based site-to-site VPNs are useful tools for combining resources housed in disparate offices securely, as if they were all in the same physical location.
+
+Extranet-based Site-to-Site
+Extranet-based site-to-site VPNs are often used by two or more different companies that want to share certain resources but keep others private. 
+With an extranet-based site-to-site VPN, each entity connects to the VPN and chooses what they want to make available to the other companies. 
+In this way, they can collaborate and share without exposing proprietary data.
