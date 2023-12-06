@@ -2,10 +2,84 @@ Reading
 Computer Network - AAA (Authentication, Authorization and Accounting)
 
 Explain each of the three A’s as you would to a non-technical family member. Use an analogy or a story.
+
+AAA (Authentication, Authorization, Accounting) – 
+AAA is a standard-based framework used to control who is permitted to use network resources (through authentication), 
+what they are authorized to do (through authorization), and capture the actions performed while accessing the network (through accounting). 
+
+Authentication- Is checking if someone trying to use the network is allowed by asking for a username and password. 
+Network admins decide how this check happens, like using a device's own list of users or asking an outside server. They use lists to pick how to do this check.
+
+Authorization- Decides what a user can do once they're allowed on the network. For instance, a junior engineer might only get access to certain commands.
+Admins use lists to set these limits, either on the device or through an outside server.
+
+Accounting- Keeps track of what users do on the network, like which events they trigger and how long they stay connected. 
+Admins make lists to decide what to track and where to send those records.
+
 What should the administrator do if the ACS server fails to authenticate a user during AAA implementation?
+
+If the ACS server fails to authenticate, the administrator should mention using the local database of the device as a backup, in the method list, to implement AAA.
+
 What is the role of the NAS in the AAA implementation using an ACS server? Use a diagram.
+
+  +---------------------+               +-------------------+
+  |    Client Device    |               |    Network       |
+  +---------------------+               +-------------------+
+            |                                   |
+      +-----|-----------------------------------|-----+
+      |     |                                   |     |
+      |     |        Authentication Request     |     |
+      |     |---------------------------------->|     |
+      |     |                                   |     |
+      |     |       Authentication Response     |     |
+      |     |<----------------------------------|     |
+      |     |                                   |     |
+      |     |       Authorization Request       |     |
+      |     |---------------------------------->|     |
+      |     |                                   |     |
+      |     |      Authorization Response       |     |
+      |     |<----------------------------------|     |
+      |     |                                   |     |
+      |     |        Accounting Request         |     |
+      |     |---------------------------------->|     |
+      |     |                                   |     |
+      |     |       Accounting Response         |     |
+      |     |<----------------------------------|     |
+      |     |                                   |     |
+  +---|-----|-----------+               +---------|-------+
+  | NAS     |           |               | ACS (AAA Server) |
+  |         |           |               |                 |
+  +---------+           +---------------+-----------------+
+
+
+
+
 RADIUS Concepts
 
 What are the benefits of using RADIUS for authentication and authorization?
+
+Centralized Management: Manage multiple logins and access across systems using one set of credentials.
+Security: Strong authentication protocols and encryption keep data safe.
+Scalability: Handles a large number of users and devices effectively.
+Authorization Control: Sets user permissions and access policies.
+Logging and Accountability: Keeps track of user activity for auditing and troubleshooting.
+Compatibility: Works well with various network devices.
+Reduced Network Load: Optimizes traffic by consolidating authentication requests.
+Reliability: Supports failover and redundancy for uninterrupted access control.
+
+
 What is RADIUS and what does it stand for?
+
+RADIUS (Remote Authentication Dial-In User Service) 
+Is a client-server protocol and software that enables remote access servers to communicate with a central server to authenticate dial-in users and authorize their access to the requested system or service.
+
 Research: What encryption algorithms does RADIUS use?
+RADIUS uses encryption like MD5, SHA-1/SHA-2, and TLS to secure data and messages during authentication and communication between devices. 
+These algorithms protect against unauthorized access and tampering. EAP methods, like TLS and TTLS, also incorporate various cryptographic techniques within RADIUS.
+
+
+
+Resources:
+ChatGPT
+https://archive.is/27Y19#selection-871.0-871.257
+https://www.geeksforgeeks.org/computer-network-aaa-authentication-authorization-and-accounting/
