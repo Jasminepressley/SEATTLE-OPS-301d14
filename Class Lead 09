@@ -1,1 +1,41 @@
+Reading
+How to capture network traffic? SPAN vs TAP
+
+What are the differences between SPAN and TAP?
+
+SPAN (Switched Port Analyzer):
+Function: SPAN is a feature found in network switches that allows you to mirror traffic from one or more ports and send it to another port for analysis.
+Operation: It operates within the switch itself, duplicating selected traffic (based on specific criteria or ports) and sending it to a designated monitoring port.
+Usage: SPAN is often used for monitoring network traffic for analysis, troubleshooting, or security purposes without disrupting the actual flow of traffic.
+
+TAP (Test Access Point):
+Function: TAPs are physical devices placed inline in a network connection to create a copy of the network traffic, allowing for monitoring or analysis without interfering with the network's operation.
+Operation: Unlike SPAN, TAPs are hardware devices that passively duplicate all traffic (both sent and received) flowing through the network link without any influence on the actual network.
+Usage: TAPs are used when complete visibility of network traffic is needed without the risk of altering or dropping any packets, making them especially valuable for security or network performance analysis.
+
+What types of network devices can support network traffic mirroring?
+
+Switches: Managed switches often have the capability to mirror traffic from one or more ports to another port for analysis or monitoring purposes. This feature is commonly known as port mirroring or SPAN (Switched Port Analyzer).
+Routers: Some advanced routers can also have the capability to mirror traffic for analysis or monitoring purposes.
+Firewalls: Next-generation firewalls might offer traffic mirroring functionalities to allow for in-depth analysis of network traffic.
+Network TAPs (Test Access Points): These are specialized devices that can be installed on network links to passively copy traffic from one network segment to another, enabling monitoring without interrupting the flow of data.
+Network Monitoring Tools: Certain dedicated appliances or software-based tools are designed specifically for traffic monitoring and analysis. They may not mirror traffic themselves but rely on capabilities within switches or routers to do so.
+Load Balancers: In some setups, load balancers may have mirroring capabilities to monitor traffic distribution and analyze incoming and outgoing data.
+
+How can network traffic mirroring be used for network security?
+
+Network traffic mirroring, also known as port mirroring or SPAN (Switched Port Analyzer), 
+involves duplicating the traffic that moves through one port (or multiple ports) of a network switch and sending that duplicate traffic to another port where monitoring or analysis tools can inspect it. 
+
+Are there any legal or ethical considerations when using network traffic mirroring?
+
+Privacy: Be mindful of collecting sensitive data and ensure compliance with privacy laws. Obtain consent when necessary.
+Regulations: Adhere to industry-specific rules (HIPAA, GDPR) and establish clear data retention policies.
+Ethics: Respect employee privacy and handle data securely to avoid ethical and legal issues.
+Legal Compliance: Understand wiretapping laws and handle evidence properly if used for investigations.
+Best Practices: Communicate monitoring policies, anonymize sensitive data, restrict access, and prioritize data security.
+
+Resoucres:
+Chat GPT
+https://accedian.com/blog/capture-network-traffic-span-vs-tap/
 
