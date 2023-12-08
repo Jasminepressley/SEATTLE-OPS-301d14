@@ -1,3 +1,33 @@
 How can one host within a VPC any services that need to be public?
+A VPC will have a dedicated subnet and VLAN that are only accessible by the VPC customer. 
+This prevents anyone else within the public cloud from accessing computing resources within the VPC – effectively placing the "Reserved" sign on the table. 
+The VPC customer connects via VPN to their VPC, so that data passing into and out of the VPC is not visible to other public cloud users.
+
 What are examples of services that would live in the publicly-accessible part of the VPC? The privately-accessible part?
+
+Public Subnets:
+
+Internet Gateway: This allows communication between instances in the VPC and the internet, often located in a public subnet.
+Elastic Load Balancer (ELB): It distributes incoming traffic across multiple instances and typically resides in a public subnet to receive external traffic.
+Bastion Hosts or Jump Boxes: Instances that allow secure access to private instances via SSH or RDP, placed in a public subnet to facilitate external access.
+Public-Facing Application Servers: Instances hosting public services like websites or APIs accessible from the internet.
+Public Databases with Restricted Access: Some databases might reside in public subnets but are configured with strict security groups to limit access only to specific IP addresses or resources.
+Private Subnets:
+
+Application Servers and Backend Services: Instances that handle sensitive data or perform backend tasks that don't require direct internet access.
+Database Servers: Instances running databases like Amazon RDS, DynamoDB, or other database systems that don't need direct external access and are placed in private subnets for security.
+Internal APIs and Microservices: Services or APIs used internally within your infrastructure that don't need external exposure.
+Elasticache for Private Use: Services like Redis or Memcached used for caching purposes within the VPC and not intended for direct external access.
+Other Internal Resources: Various services, such as batch processing servers, application components, or analytics tools, that operate within the internal network and do not require public access.
+
 What are the trade-offs of using a VPC vs traditional infrastructure?
+
+Scalability: Because a VPC is hosted by a public cloud provider, customers can add more computing resources on demand.
+Easy hybrid cloud deployment: It's relatively simple to connect a VPC to a public cloud or to on-premises infrastructure via the VPN. 
+Better performance: Cloud-hosted websites and applications typically perform better than those hosted on local on-premises servers.
+Better security: The public cloud providers that offer VPCs often have more resources for updating and maintaining the infrastructure, especially for small and mid-market businesses. 
+For large enterprises or any companies that face extremely tight data security regulations, this is less of an advantage.
+
+Resources: 
+Chat GPT
+https://www.cloudflare.com/learning/cloud/what-is-a-virtual-private-cloud/
