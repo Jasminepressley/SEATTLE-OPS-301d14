@@ -1,0 +1,3 @@
+How can one host within a VPC any services that need to be public?
+What are examples of services that would live in the publicly-accessible part of the VPC? The privately-accessible part?
+What are the trade-offs of using a VPC vs traditional infrastructure?
