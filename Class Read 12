@@ -2,6 +2,32 @@ Reading
 What is a Windows Domain and How Does It Affect My PC?
 
 Explain the role of a Domain Controller?
+
+A Domain Controller is a critical component in a Windows-based network that manages security authentication and controls access to network resources. 
+
+Key roles:
+Manages User Authentication: Validates user credentials for network access.
+Enforces Security Policies: Controls access, passwords, and user permissions.
+Centralizes Network Administration: Manages users, groups, and policies from a single point.
+Replicates Data: Maintains consistency across multiple Domain Controllers.
+Hosts DNS Services: Translates domain names to IP addresses within the network.
+Establishes Trust Relationships: Enables secure communication between different domains or parts of the network.
+
 What is the benefit of being able to login with the same username and password on any computer joined to the domain? What are the security risks?
+
+Using the same username and password across a domain streamlines access and management but poses security risks. 
+If these credentials are compromised, it gives broad access across the network, potentially allowing attackers to move between systems and access sensitive data. 
+To counter this, strong password practices and robust security measures are crucial.
+
 Describe how group policies are used in domains?
+
+Group Policies in domains are used to centrally manage and control settings for users and computers in an Active Directory network. 
+They enforce security measures, configure desktops, manage software, and apply specific rules to different groups or individuals, ensuring consistency and security across the network.
+
 In what other ways can you think of that domains could be used beyond what was presented in the reading?
+
+Domains, beyond their primary function as a foundation for Group Policy management, play a pivotal role in establishing a secure, collaborative, and efficient network environment within an organization.
+
+Resources:
+ChatGPT
+https://cybersecuritynews.com/dns-attacks/
