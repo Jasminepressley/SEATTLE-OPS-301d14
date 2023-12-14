@@ -2,5 +2,26 @@ Reading
 What is Group Policy and What Role Does It Play in Data Security
 
 What role does Group Policy play in Windows Active Directory?
+Group Policy is a feature of Windows that facilitates a wide variety of advanced settings that network administrators can use to control the working environment of users and computer accounts in Active Directory. 
+It essentially provides a centralized place for administrators to manage and configure operating systems, applications, and users’ settings.
+
 Name and describe different ways GPOs can benefit security.
+
+Password Policy: Many organizations are operating with relaxed password policies, with many users often having passwords set to never expire. Passwords that aren’t regularly rotated, are too simple or use common passphrases are at risk of being hacked through brute force. GPOs can be used to establish password length, complexity and other requirements.
+Systems Management: GPOs can be used to simplify tasks that are at best mundane and at worst critically time-consuming. You can save yourself hours and hours of time configuring the environment of new users and computers joining your domain by using GPOs to apply a standardized, universal one.
+Health Checking: GPOs can be used to deploy software updates and system patches to ensure your environment is healthy and up to date against the latest security threats.
+
 How can the acronym “LSDOU” help you figure out which policies are in effect?
+
+The acronym "LSDOU" stands for:
+
+-Local
+-Site
+-Domain
+-OU (Organizational Unit)
+This acronym represents the order in which Group Policy Objects (GPOs) are applied in a Windows Active Directory environment. 
+Understanding this sequence can help you figure out which policies are in effect for a particular user or computer.
+
+Resources:
+ChatGPT
+https://www.lepide.com/blog/what-is-group-policy-gpo-and-what-role-does-it-play-in-data-security/
